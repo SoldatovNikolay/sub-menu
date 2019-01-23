@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sub-menu</title>
+  <style>
+    li {position: relative;display: inline-block;margin-right: 20px;}
+    .sub-menu {
+      position: absolute;
+      top: 100%;
+      z-index: 10;
+      background: #FFAB51;
+      padding: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: .3s;
+    }
+    ul li:hover .sub-menu {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+    <h2>.sub-menu {transform: scaleY(0);}</h2>
+    <ul class="top-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">About<i class="fa fa-angle-down"></i></a>
+        <ul class="sub-menu">
+          <li><a href="">Item 1</a></li>
+          <li><a href="">Item 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  
+</body>
+</html>
