@@ -1,5 +1,6 @@
 # sub-menu opacity
 
+HTML
 ```html
 <ul class="top-menu">
   <li><a href="#">Home</a></li>
@@ -15,6 +16,7 @@
 </ul>
 ```
 
+CSS
 ```css
 li {position: relative;display: inline-block;margin-right: 20px;}
 .sub-menu {
